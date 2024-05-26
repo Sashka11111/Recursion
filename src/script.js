@@ -1,10 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
-// Шлях до вашого JSON-файлу
+// Шлях JSON-файлу
 const jsonPath = path.join(__dirname, 'data', 'books.json');
 
-// Читаємо вміст JSON-файлу
+// вміст JSON-файлу
 fs.readFile(jsonPath, 'utf8', (err, data) => {
   if (err) {
     console.error(`Could not read the JSON file: ${err}`);
